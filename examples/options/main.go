@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	md "github.com/Skarlso/html-to-markdown"
+	md "github.com/arangodb-managed/html-to-markdown"
 )
 
 func main() {

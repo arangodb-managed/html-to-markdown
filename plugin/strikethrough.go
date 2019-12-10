@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
-	md "github.com/Skarlso/html-to-markdown"
+	md "github.com/arangodb-managed/html-to-markdown"
 )
 
 // Strikethrough converts `<strike>`, `<s>`, and `<del>` elements

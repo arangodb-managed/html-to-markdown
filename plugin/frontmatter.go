@@ -3,7 +3,7 @@ package plugin
 import (
 	"fmt"
 
-	md "github.com/Skarlso/html-to-markdown"
+	md "github.com/arangodb-managed/html-to-markdown"
 	"gopkg.in/yaml.v2"
 )
 

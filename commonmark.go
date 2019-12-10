@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/Skarlso/html-to-markdown/escape"
+	"github.com/arangodb-managed/html-to-markdown/escape"
 )
 
 var multipleSpacesR = regexp.MustCompile(`  +`)
