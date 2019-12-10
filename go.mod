@@ -1,4 +1,4 @@
-module github.com/Skarlso/html-to-markdown
+module github.com/arangodb-managed/html-to-markdown
 
 go 1.12
 
