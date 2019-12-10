@@ -3,8 +3,8 @@ package plugin
 import (
 	"fmt"
 
-	"github.com/JohannesKaufmann/html-to-markdown"
-	yaml "gopkg.in/yaml.v2"
+	md "github.com/Skarlso/html-to-markdown"
+	"gopkg.in/yaml.v2"
 )
 
 // type frontMatterCallback func(selec *goquery.Selection) map[string]interface{}
