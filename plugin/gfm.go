@@ -3,7 +3,7 @@
 package plugin
 
 import (
-	md "github.com/Skarlso/html-to-markdown"
+	md "github.com/arangodb-managed/html-to-markdown"
 )
 
 // GitHubFlavored is GitHub's Flavored Markdown

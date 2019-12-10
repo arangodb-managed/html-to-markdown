@@ -2,7 +2,7 @@ package plugin
 
 import (
 	"github.com/PuerkitoBio/goquery"
-	md "github.com/Skarlso/html-to-markdown"
+	md "github.com/arangodb-managed/html-to-markdown"
 )
 
 // TaskListItems converts checkboxes into task list items.

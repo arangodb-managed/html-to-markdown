@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	md "github.com/Skarlso/html-to-markdown"
-	plugin "github.com/Skarlso/html-to-markdown/plugin"
+	md "github.com/arangodb-managed/html-to-markdown"
+	plugin "github.com/arangodb-managed/html-to-markdown/plugin"
 )
 
 func main() {

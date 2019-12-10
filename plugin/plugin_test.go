@@ -3,7 +3,7 @@ package plugin
 import (
 	"testing"
 
-	md "github.com/Skarlso/html-to-markdown"
+	md "github.com/arangodb-managed/html-to-markdown"
 )
 
 func TestStrikethroughDefault(t *testing.T) {
