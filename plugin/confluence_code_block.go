@@ -29,9 +29,14 @@ func ConfluenceCodeBlock() md.Plugin {
 							// node's last child -> <ac:plain-text-body>. We don't want to filter on that
 							// because we would end up with structured-macro around us.
 							// ac:plain-text-body's last child is [CDATA which has the actual content we are looking for.
-							content := strings.TrimPrefix(node.LastChild.LastChild.Data, "[CDATA[")
-							content = strings.TrimSuffix(content, "]]")
-							formatted := fmt.Sprintf("%s\n%s\n%s", character, content, character)
+							data := strings.TrimPrefix(node.LastChild.LastChild.Data, "[CDATA[")
+							data = strings.TrimSuffix(data, "]]")
+							// content, if set, will contain the language that has been set in the field.
+							var language string
+							if content != "" {
+								language = content
+							}
+							formatted := fmt.Sprintf("%s%s\n%s\n%s", character, language, data, character)
 							return md.String(formatted)
 						}
 					}
