@@ -15,7 +15,7 @@ import (
 	md "github.com/arangodb-managed/html-to-markdown"
 )
 
-// ConfluenceAttachments converts `<ri:attachment ri:filename="oasis.png" ri:version-at-save="1" />` elements
+// ConfluenceAttachments converts `<ri:attachment ri:filename=""/>` elements
 func ConfluenceAttachments() md.Plugin {
 	return func(c *md.Converter) []md.Rule {
 		return []md.Rule{

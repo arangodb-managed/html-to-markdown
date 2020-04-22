@@ -95,8 +95,14 @@ func TestConfluenceAttachments(t *testing.T) {
 	conv := md.NewConverter("", true, nil)
 	conv.Use(ConfluenceAttachments())
 
-	input := `<ri:attachment ri:filename="oasis.png" ri:version-at-save="1" />`
-	expected := "![][oasis.png]"
+	input := `<p>Here&rsquo;s an image:</p><p /><ac:image ac:align="center" ac:layout="center" ac:original-height="290" ac:original-width="290"><ri:attachment ri:filename="oasis.png" ri:version-at-save="1" /></ac:image><p /><p>Another one</p><ac:image ac:align="center" ac:layout="center" ac:original-height="457" ac:original-width="728"><ri:attachment ri:filename="oasis.jpg" ri:version-at-save="1" /></ac:image><p />`
+	expected := `Here’s an image:
+
+![][oasis.png]
+
+Another one
+
+![][oasis.jpg]`
 	markdown, err := conv.ConvertString(input)
 	if err != nil {
 		t.Error(err)
